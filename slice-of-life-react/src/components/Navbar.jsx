@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className='navbar'>
             <div className='container'>
                 <div className='logo'>
-                    <a href="/">INSERTLOGOHERE</a>
+                    <a href="/">LOGO</a>
                 </div>
                 <div className='links'>
                     <Link className='link' to="/?cat=technology">
