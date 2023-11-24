@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/authContext';
 
 const Login = () => {
@@ -14,7 +14,7 @@ const Login = () => {
 
     const { login } = useContext(AuthContext);
 
-    const handleChange = e => {
+    const handleChange = (e) => {
         setInputs((prev) => ({
             ...prev, [e.target.name]: e.target.value
         }));
