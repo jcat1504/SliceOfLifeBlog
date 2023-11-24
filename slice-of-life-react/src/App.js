@@ -1,6 +1,7 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import { AuthContextProvider } from "./context/authContext";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -10,11 +11,11 @@ import './style.scss';
 
 const Layout = () => {
   return (
-    <>
+    <AuthContextProvider>
       <Navbar />
       <Outlet />
       <Footer />
-    </>
+    </AuthContextProvider>
   );
 };
 
