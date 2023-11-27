@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const [inputs, setInputs] = useState({
@@ -50,8 +50,10 @@ const Register = () => {
                 {/*error message */}
                 <span>
                     Do you have an account? <Link to="/login">Login</Link>
-                    {/*Login*/}
                 </span>
+                <p>
+                    Or click to go <Link to="/">Home</Link>
+                </p>
             </form>
         </div>
     );

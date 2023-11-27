@@ -23,7 +23,7 @@ $light-gray: #707070;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background-color: $light-orange;
+      background-color: #BE89F3;
 
       h1 {
         font-size: 30px;
@@ -49,7 +49,7 @@ $light-gray: #707070;
         button {
           padding: 10px;
           border: none;
-          background-color: $dark-orange;
+          background-color: #BE89F3;
           border-radius: 4px;
           color: white;
           cursor: pointer;
@@ -57,7 +57,7 @@ $light-gray: #707070;
 
         p {
           font-size: 12px;
-          color: red;
+          // color: red;
           text-align: center;
         }
 
@@ -78,7 +78,7 @@ $light-gray: #707070;
 
         .logo {
           img {
-            width: 100px;
+            width: 150px;
           }
         }
 
@@ -102,20 +102,21 @@ $light-gray: #707070;
         }
 
         .write {
-          background-color: $light-orange;
+          background-color: #BE89F3;
           width: 50px;
-          height: 50px;
-          border-radius: 50%;
+          height: 40px;
+          border-radius: 0;
           display: flex;
           align-items: center;
           justify-content: center;
           font-weight: 300;
-          border: 1px solid white; // to prevent items move when hover because the extra pixel of the border when hover
+          border: 1px solid white; 
+ 
 
           &:hover {
             color: $brown-orange;
             background-color: white;
-            border: 1px solid $dark-orange;
+            border: 1px solid #BE89F3;
           }
         }
       }

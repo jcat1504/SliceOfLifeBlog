@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/authContext';
+import Logo from "../images/logo2.png";
 
 
 const Navbar = () => {
@@ -16,7 +17,9 @@ const Navbar = () => {
         <div className='navbar'>
             <div className='container'>
                 <div className='logo'>
-                    <a href="/">LOGO</a>
+                    <a href="/">
+                    <img src={Logo} alt="logo" />
+                    </a>
                 </div>
                 <div className='links'>
                     <Link className='link' to="/?cat=technology">
@@ -25,6 +28,11 @@ const Navbar = () => {
                     <Link className='link' to="/?cat=self-development">
                         <h6>SELF-DEVELOPMENT</h6>
                     </Link>
+                    <span className='write'>
+                        <Link className="link" to="/write">
+                            Write
+                        </Link>
+                    </span>
                     <span>{currentUser?.username}</span>
                     {currentUser ? (
                         <span onClick={logoutNavbar}>LOGOUT</span>
@@ -33,11 +41,6 @@ const Navbar = () => {
                             Login
                         </Link>
                     )}
-                    <span className='write'>
-                        <Link className="link" to="/write">
-                            Write
-                        </Link>
-                    </span>
                 </div>
             </div>
         </div>

@@ -49,8 +49,12 @@ const Login = () => {
                 <span>
                     Do you have an account? <Link to="/register">Register</Link>
                 </span>
+                <p>
+                    Or click to go <Link to="/">Home</Link>
+                </p>
             </form>
         </div>
+        
     )
 };
 
