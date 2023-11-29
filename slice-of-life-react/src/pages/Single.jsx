@@ -45,14 +45,11 @@ const Single = () => {
             <div className="content">{}
             <img src={`../upload/${post?.img}`} alt="post cover" />
             <div className="user">
-                {/*render user img if it exists*/}
                 {post.userImg && <img src={post.userImg} alt="user" />}
                 <div className="info">
-                    {/*render post author and date */}
                     <span>{post.username}</span>
                     <p>Posted {moment(post.date).fromNow()}</p>
                 </div>
-                {/*Render edit and delete buttons if user is the author of post */}
                 {currentUser.username === post.username && (
                     <div className="edit">
                         <Link to={`/write?edit=2`} state={post}>
@@ -62,7 +59,6 @@ const Single = () => {
                     </div>
                 )}
             </div>
-            {/*render post title and desc */}
             <h1>{post.title}</h1>
             <i>"{getText(post.desc)}"</i>
             <p>
@@ -96,7 +92,7 @@ const Single = () => {
             lacus laoreet non. Neque volutpat ac tincidunt vitae semper quis
             lectus. Vitae ultricies leo integer malesuada nunc vel risus commodo.
             Cras sed felis eget velit aliquet sagittis id consectetur. Eros donec
-            ac odio tempor orci dapibus ultrices in iaculis.   
+            ac odio tempor orci dapibus ultrices in iaculis.
             </p>
             <p>
             Ut eu sem integer vitae. Aliquam vestibulum morbi blandit cursus risus
@@ -122,7 +118,6 @@ const Single = () => {
             praesent elementum facilisis leo vel fringilla est ullamcorper eget.
         </p>
         </div>
-        {/* show related categories */}
         <Menu cat={post.cat} />
         </div>
     );

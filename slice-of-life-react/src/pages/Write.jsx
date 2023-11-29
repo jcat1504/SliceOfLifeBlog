@@ -76,8 +76,8 @@ const Write = () => {
                         Upload Image
                     </label>
                     <div className="buttons">
-                        <button>Save as a Draft</button>
                     <button onClick={handleClick}>Publish</button>
+                    <button>Save as a Draft</button>
                     </div>
                 </div>
                 <div className="item">
@@ -89,7 +89,7 @@ const Write = () => {
                         value="technology"
                         id="technology"
                         onChange={(e) => setCat(e.target.value)} />
-                        <label className="file" htmlFor="file">Technology</label>
+                        <label htmlFor="technology">Technology</label>
                     </div>
                     {/* Self-Development */}
                     <div className="cat">
