@@ -26,19 +26,15 @@ const Home = () => {
     return (
         <div className="home">
             <div className="posts">
-                {/*mapping over posts here */}
                 {posts.map((post) => {
                     <div className="post" key={post.id}>
                         <div className="post-img">
-                            {/*post img */}
                             <img src={`.../upload/${post.img}`} alt="post img cover" />
                         </div>
                         <div className="content">
-                            {/*link to post pg */}
                             <Link className="link" to={`/post/${post.id}`}>
                             <h1>{post.title}</h1>
                             </Link>
-                            {/*post desc*/}
                             <p>{getText(post.desc)}</p>
                             <Link className="link" to={`/post/${post.id}`}>
                                 <button>Read More</button>
