@@ -1,3 +1,4 @@
+import moment from 'moment';
 import React, { useState } from "react";
 import ReactQuill from 'react-quill';
 import "react-quill/dist/quill.snow.css";
@@ -49,6 +50,8 @@ const Write = () => {
             console.log(err);
         }
      };
+
+     
     
     return (
         <div className="add">
@@ -65,7 +68,7 @@ const Write = () => {
                         <b>Status: </b> Draft
                     </span>
                     <span>
-                        <b>Visibility: </b> Public 
+                        <b>Visibility: </b> Public
                     </span>
                     <input style={{ display: "none"}}
                     type="file"
