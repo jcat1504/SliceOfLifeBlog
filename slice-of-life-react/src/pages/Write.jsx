@@ -84,31 +84,54 @@ const Write = () => {
                     </div>
                 </div>
                 <div className="item">
-                    <h1>Category</h1>
-                    {/* Technology */}
-                    <div className="cat">
-                        <input type="radio" checked={cat === "technology"}
-                        name="cat"
-                        value="technology"
-                        id="technology"
-                        onChange={(e) => setCat(e.target.value)} />
-                        <label htmlFor="technology">Technology</label>
-                    </div>
-                    {/* Self-Development */}
-                    <div className="cat">
-                    <input
-                    type="radio"
-                    checked={cat === "self-development"}
-                    name="cat"
-                    value="self-development"
-                    id="self-development"
-                    onChange={(e) => setCat(e.target.value)}
-                    />
-                    <label htmlFor="self-development">Self-Development</label>
-                    </div>
-                </div>
-            </div>
+          <h1>Category</h1>
+          <div className="cat">
+            <input
+              type="radio"
+              checked={cat === "art"}
+              name="cat"
+              value="art"
+              id="art"
+              onChange={(e) => setCat(e.target.value)}
+            />
+            <label htmlFor="art">Art</label>
+          </div>
+          <div className="cat">
+            <input
+              type="radio"
+              checked={cat === "technology"}
+              name="cat"
+              value="technology"
+              id="technology"
+              onChange={(e) => setCat(e.target.value)}
+            />
+            <label htmlFor="technology">Technology</label>
+          </div>
+          <div className="cat">
+            <input
+              type="radio"
+              checked={cat === "productivity"}
+              name="cat"
+              value="productivity"
+              id="productivity"
+              onChange={(e) => setCat(e.target.value)}
+            />
+            <label htmlFor="productivity">Productivity</label>
+          </div>
+          <div className="cat">
+            <input
+              type="radio"
+              checked={cat === "life"}
+              name="cat"
+              value="life"
+              id="life"
+              onChange={(e) => setCat(e.target.value)}
+            />
+            <label htmlFor="life">Life</label>
+          </div>
         </div>
+      </div>
+    </div>
     );
 };
 

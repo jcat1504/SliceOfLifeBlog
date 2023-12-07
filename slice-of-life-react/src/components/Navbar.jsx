@@ -22,11 +22,17 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div className='links'>
+                <Link className='link' to="/?cat=art">
+                        <h6>ART</h6>
+                    </Link>
                     <Link className='link' to="/?cat=technology">
                         <h6>TECHNOLOGY</h6>
                     </Link>
-                    <Link className='link' to="/?cat=self-development">
-                        <h6>SELF-DEVELOPMENT</h6>
+                    <Link className='link' to="/?cat=productivity">
+                        <h6>PRODUCTIVITY</h6>
+                    </Link>
+                    <Link className='link' to="/?cat=life">
+                        <h6>LIFE</h6>
                     </Link>
                     <span className='write'>
                         <Link className="link" to="/write">
@@ -37,7 +43,7 @@ const Navbar = () => {
                     {currentUser ? (
                         <span onClick={logoutNavbar}>LOGOUT</span>
                     ) : (
-                        <Link className="link" to="/login">
+                        <Link className="link" to="/login" style={{fontFamily: "Cambria", color: "rgb(122 0 245)", textDecoration: "underline", fontSize: "18px"}}>
                             Login
                         </Link>
                     )}
