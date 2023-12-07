@@ -85,7 +85,7 @@ $light-gray: #707070;
         .links {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 18px;
 
           & > *:not(:last-child):hover {
             border-bottom: 1px solid $light-orange;
@@ -359,7 +359,7 @@ $light-gray: #707070;
       }
 
       .item {
-        padding: 10px;
+        padding: 15px;
         border: 1px solid lightgray;
         flex: 1;
         display: flex;
@@ -403,6 +403,11 @@ $light-gray: #707070;
             padding: 3px 5px;
           }
         }
+
+        input[type="radio"] {
+          margin: 0px  5px;
+        }
+
 
         .category {
           display: flex;
